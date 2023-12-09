@@ -40,7 +40,6 @@ install RStudio.
 > whether a more recent version is available. If so, please download and install
 > it. You can [check here](https://cran.r-project.org/bin/windows/base/rw-FAQ.html#How-do-I-UNinstall-R_003f) for
 > more information on how to remove old versions from your system if you wish to do so.
-{: .solution}
 
 > ## If you don't have R and RStudio installed
 >
@@ -52,7 +51,6 @@ install RStudio.
 > * Double click the file to install it
 > * Once it's installed, open RStudio to make sure it works and you don't get any
 > error messages.
-{: .solution}
 
 
 #### macOS
@@ -83,7 +81,6 @@ install RStudio.
 > * Double click the file to install RStudio
 > * Once it's installed, open RStudio to make sure it works and you don't get any
 >   error messages.
-{: .solution}
 
 #### Linux
 
