@@ -1,0 +1,75 @@
+---
+title: "Session B - How do I make inferential statistics? (Solutions)."
+author: Christopher A Oldnall
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Throughout remember we will need tidyverse. Additionally we will continue to work with the MASS package and the cats data. Go ahead and load this in.
+
+```{r Exercise0, message=FALSE}
+library(tidyverse)
+library(MASS)
+data("cats")
+```
+
+-------------
+
+When we conduct inferential statistics, we are simply formulating the same types of questions that we were asking in descriptive statistics but checking this in a more mathematically rigorous manner. For example in order to see whether there is a difference in body weights between the male and female cats we can conduct a t-test. Have a look at the following t-test for the body weights.
+
+```{r T-TestBody}
+cats_male <- cats %>%
+  filter(Sex == 'M')
+
+cats_female <- cats %>%
+  filter(Sex == 'F')
+
+t.test(cats_male$Bwt, cats_female$Bwt)
+```
+
+### Exercise 1
+
+Is there a difference between the mean heart weight of the male and female cats? Conduct a t-test in order to check this.
+[Hint: you do not need to recreate the dataframes cats_male and cats_female]
+
+```{r T-TestHeart}
+t.test(cats_male$Hwt, cats_female$Hwt)
+```
+
+-------------
+
+Did you notice that the R programme automatically performed the Welch t-test? Why might this be a good thing from what we have learnt?
+
+### Exercise 2
+
+Re-perform the t-test using the two sample t-test. To do this you may need to look at the parameters of the t-test function using ?t.test. Compare the confidence intervals of the two different tests, which one is more conservative? What can we take away about the difference in mean weights?
+
+```{r T-TestHeart2}
+t.test(cats_male$Hwt, cats_female$Hwt, var.eq = TRUE)
+```
+
+Here we see that the confidence interval for the two sample t-test was more conservative (wider). This is to be expected as the p-value is smaller. This however is as small as a mean diffence of 1.34 between male and female cats and therefore we are confident that there is a difference (with a p-value < 0.05).
+
+-------------
+
+### Exercise 3
+
+Formally write out the hypothesis of the tests above, including a rigourous statistical conclusion.
+
+H0: There is no difference in the mean weights of male and female cats.
+H1: There is a difference in the mean weights of the male and female cats.
+
+As the p-value of the t-test is less than 0.05, we can say at a 95% confidence level that we can reject the null hypothesis that there is no difference in the mean weights of male and female cats.
+
+-------------
+
+We did all this on the assumption that the mean of the data was normally distributed.
+
+### Exercise 4
+
+Which mathematical theorem allows us to do this? Write this down.
+
+We can appeal to the Central Limit Theorem, which tells us that when we have over 30 samples in every group we can assume that the mean of the sample would be normally distributed. Hence we can use the t-test.

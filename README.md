@@ -1,2 +1,2 @@
-# IntroToStatistics2023
-This is a repository which contains all the materials to be used in the introduction to statistics course in December 2023.
+# Introduction to Statistics 2023
+This is a repository which contains all the materials to be used in the introduction to statistics course in December 2023. This course was run by Christopher A Oldnall (chris.oldnall@ed.ac.uk). If you notice any mistakes or have any recommendations or comments please get in touch. 
