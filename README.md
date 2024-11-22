@@ -1,5 +1,5 @@
 # Introduction to Statistics 2023
-This is a repository which contains all the materials to be used in the introduction to statistics course in December 2023. This course was run by Christopher A Oldnall (chris.oldnall@ed.ac.uk) and Ki Tong (ktong2@ed.ac.uk). If you notice any mistakes or have any recommendations or comments please get in touch. 
+This is a repository which contains all the materials to be used in the introduction to statistics course. This course is run by Christopher A Oldnall (chris.oldnall@ed.ac.uk) and Rhys Davies (R.M.M.Davies@sms.ed.ac.uk). If you notice any mistakes or have any recommendations or comments please get in touch. 
 
 For this course, you will need to use the R programming language. There is an expectation that you are familiar with the r-environment but not one particular style or any packages in particular. In order to use R there are some instructions below:
 
