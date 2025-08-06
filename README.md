@@ -3,6 +3,12 @@ This is a repository which contains all the materials to be used in the introduc
 
 For this course, you will need to use the R programming language. There is an expectation that you are familiar with the r-environment but not one particular style or any packages in particular. In order to use R there are some instructions below:
 
+## License
+
+All material collected here is free to use but is covered by a License: [![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/) license
+
+
+
 ## On Noteable
 
 1. Go to https://noteable.edina.ac.uk/login
